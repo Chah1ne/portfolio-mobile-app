@@ -1,0 +1,1 @@
+ C:\\DEV\ MOBILE\\Projects\\cross_platform\\mini\ projet\\cv\\.dart_tool\\flutter_build\\ea0536f434b8b95293d0f4d4f409b036\\native_assets.yaml: 
