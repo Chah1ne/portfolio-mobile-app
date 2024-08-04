@@ -1,6 +1,6 @@
-# cv
+# portfolio
 
-Découvrez mon CV sous forme d'application mobile ! Vous pouvez également le visualiser en version web en naviguant vers le dossier web dans l'application, où j'ai configuré un serveur HTTP pour une expérience interactive. Pour voir l'application mobile, cliquez sur le lien dans ma bio. Consultez aussi ces captures d'écran pour un aperçu de l'application.
+Découvrez mon portfolio sous forme d'application mobile ! Vous pouvez également le visualiser en version web en naviguant vers le dossier web dans l'application, où j'ai configuré un serveur HTTP pour une expérience interactive. Pour voir l'application mobile, cliquez sur le lien dans ma bio. Consultez aussi ces captures d'écran pour un aperçu de l'application.
 pour  telecharger
 
 Application mobile CV : https://drive.google.com/file/d/1CK8XTbR6SI-cNtMwPrO3sXGWb0GlQh1y/view?usp=drive_link
