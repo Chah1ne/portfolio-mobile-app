@@ -43,5 +43,4 @@ Accès à l'application web :
 
 http://127.0.0.1:8081
 
-git remote add origin https://github.com/Chah1ne/CV-App-Mobile.git
 
