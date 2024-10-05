@@ -28,9 +28,9 @@ class FormationScreen extends StatelessWidget {
     ),
     TimelineModel(
       CardFormation(
-        'assets/images/travail.jpg',
-        '2024..',
-        'Je souhaite étudier l\'ingénierie et faire de l\'alternance pour acquérir de l\'expérience',
+        'assets/images/sesame.png',
+        '2024-2028',
+        'formation d\'ingénieur logiciel à l\'Université SESAME, tout en effectuant mon alternance chez Teamwill.',
       ),
       position: TimelineItemPosition.left,
       iconBackground: Colors.teal,

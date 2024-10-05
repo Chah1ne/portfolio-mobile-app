@@ -8,7 +8,7 @@ class ExpScreen extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(17.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -34,10 +34,11 @@ class ExpScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 4),
                       Text(
-                        "Expériences acquises lors de\nmes stages.",
+                        "Expériences acquises au cours de mes stages et de mon parcours professionnel",
                         style: theme.textTheme.subtitle1!.copyWith(
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w400,
                           fontFamily: 'Huballi',
+                          fontSize: 15,
                         ),
                       ),
                     ],

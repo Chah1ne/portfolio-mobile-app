@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.cv.app-mergeDebugResources-5:/values/values.xml",
+            "outputFile": "com.example.cv.app-mergeDebugResources-11:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\c4988ff80110f75080a936fc6f044848\\transformed\\core-1.10.1\\res\\values\\values.xml",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\DEV MOBILE\\Projects\\cross_platform\\mini projet\\cv\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\USER\\Desktop\\cv\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

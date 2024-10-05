@@ -12,6 +12,8 @@ class _CardExpState extends State<CardExp> {
   bool isOpen1 = false;
   bool isOpen2 = false;
   bool isOpen3 = false;
+  bool isOpen4 = false;
+
 
   final List<String> skills1 = [
     'Architecture de la BDD',
@@ -38,20 +40,43 @@ class _CardExpState extends State<CardExp> {
     'Partie DevOps',
   ];
 
+  final List<String> skills4 = [
+
+  ];
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildExpCard(
+            title: "Teamwill",
+            period: "oct 2024 - Today",
+            role: "",
+            projectTitle: "Technical Consultant",
+            //prize: "",
+            description: "",
+            skills: skills4,
+            techEnvironment: {},
+            isOpen: isOpen4,
+            onTap: () {
+              setState(() {
+                isOpen4 = !isOpen4;
+              });
+            },
+          ),
+
+          SizedBox(height: 16),
+
+          _buildExpCard(
             title: "ASQII",
-            period: "Janvier 2024 - Mai 2024",
-            role: "Stage de fin d'études",
-            projectTitle: "Application mobile Pour l'oncologie",
+            period: "nov 2023 - juil 2024",
+            role: "Application mobile Pour l'oncologie",
+            projectTitle: "Software Developer",
             prize: "Premier prix",
             description:
             "Développement d'une application mobile à destination des patients pour les accompagner tout au long de leur parcours de traitement.",
@@ -72,8 +97,9 @@ class _CardExpState extends State<CardExp> {
           SizedBox(height: 16),
           _buildExpCard(
             title: "CNI",
-            period: "Janvier 2023 - Février 2023",
-            role: "Stage de Perfectionnement",
+            period: "Jan 2023 - Fév 2023",
+            role: "Stage",
+            projectTitle: "Full-Stack Js Developer",
             description:
             "Le projet utilise React, Node.js et MongoDB pour une plateforme web simplifiant la gestion des formations en ligne, facilitant ainsi la planification et la participation aux cours.",
             skills: skills1,
@@ -92,8 +118,8 @@ class _CardExpState extends State<CardExp> {
           SizedBox(height: 16),
           _buildExpCard(
             title: "CTN",
-            period: "Janvier 2022 - Février 2022",
-            role: "Stage d’initiation",
+            period: "Jan 2022 - Fév 2022",
+            role: "Stage",
             description:
             "Développement d'un site web pour la gestion des achats et mise à jour des données.",
             skills: skills2,

@@ -329,7 +329,7 @@ class _ProfilScreenState extends State<ProfilScreen> {
               ),
               SizedBox(height: 10),
               Container(
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Theme.of(context).cardColor,
@@ -341,36 +341,41 @@ class _ProfilScreenState extends State<ProfilScreen> {
                     ),
                   ],
                 ),
-                child: GridView.count(
-                  crossAxisCount: 3,
-                  childAspectRatio: 4,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  padding: EdgeInsets.all(10),
-                  children: List.generate(skills.length, (index) {
-                    return Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.check_circle_outline,
+                child: Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: skills.map((skill) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
                           color: Theme.of(context).colorScheme.secondary,
-                          size: 20,
+                          width: 1,
                         ),
-                        SizedBox(width: 8),
-                        Expanded(
-                          child: Text(
-                            skills[index],
-                            style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                              fontSize: 16,
-                              fontFamily: 'Hubbali',
-                              color: Theme.of(context).textTheme.bodyText1!.color,
-                            ),
-                            overflow: TextOverflow.ellipsis,
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Theme.of(context).colorScheme.secondary,
+                            size: 16,
                           ),
-                        ),
-                      ],
+                          SizedBox(width: 6),
+                          Text(
+                            skill,
+                            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              color: Theme.of(context).colorScheme.secondary,
+                            ),
+                          ),
+                        ],
+                      ),
                     );
-                  }),
+                  }).toList(),
                 ),
               ),
 
